@@ -32,13 +32,7 @@
     </div>
   </body>
   <script>
-    
-    /* window.addEventListener("click", (e) => {
-  console.log(e.target.id)
-  if(e.target.id === "workImg"){
-  }
-})
- */
+   
  
 const workTab = document.getElementById("workTab")
 workTab.innerHTML = "<br/>Work"
@@ -62,14 +56,13 @@ homeButton.innerHTML = "HOME PAGE"
 homeButton.classList.add("homeButton")
 lowerHalf.appendChild(homeButton)
 
-/* CLICK ON HOME BUTTON*/
+/* CLICK ON HOME BUTTON */
 homeButton.addEventListener("click", () =>{
   console.log("home button clicked")
 	viewContent.innerHTML = ""
   lowerHalf.innerHTML = ""
   homeButtonArea.innerHTML = ""
   viewContent.innerHTML = "Hey, this is my website I made in a week. <br/>Ain't much but it's honest work. <br/><br/> Click on the tabs above if you want I guess."
-  
   
   
   /* FAKE HOME BUTTON */
