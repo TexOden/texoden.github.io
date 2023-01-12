@@ -6,9 +6,7 @@ body {
   text-align: center;
   color: gold;
 }
-.wholePage{
-  
-   
+.wholePage{  
 }
 .tabDef {
   vertical-align: center;
@@ -42,6 +40,8 @@ body {
 }
 .pagePicIndv {
   border-radius: 25%;
+  max-width: 35%;
+  max-height: 35%;
 }
 .pagePicIndv:hover {
   opacity: .5;
@@ -53,13 +53,14 @@ body {
   border-color: black;
   border-width: 2px;
 }
-
 .viewTabArea {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
+.lowerHalfClass{
 
+}
 .homeButton {
   color: black;
   background: gold;
