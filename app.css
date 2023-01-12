@@ -1,0 +1,74 @@
+body {
+  background-image: radial-gradient (red, yellow, green);
+  background: #800000;
+  padding: 20px;
+  font-family: Comic Sans Ms;
+  text-align: center;
+  color: gold;
+}
+.wholePage{
+  
+   
+}
+.tabDef {
+  vertical-align: center;
+  width: 100px;
+  height: 100px;
+  border-width:2px;
+  border-style:solid;
+  border-color:black;
+  border-radius: 50%;
+  background: gray;
+}
+.hoverImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%
+}
+.learningFlex {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+.pagePicClass {
+  display: flex;
+  justify-content: space-between;
+  resize: both;
+  border-radius: 25%
+}
+.pagePicIndv {
+  border-radius: 25%;
+}
+.pagePicIndv:hover {
+  opacity: .5;
+}
+.gramPic {
+  height: 25px;
+  width: 25px;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+}
+
+.viewTabArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.homeButton {
+  color: black;
+  background: gold;
+  height: 40px;
+  width: 200px;
+  border-color: black;
+  font-weight: bolder;
+  border-radius: 12px;
+} 
+
+.homeButton:hover {
+  background: black;
+  border-color: gold;
+  color: gold;
+  border-radius: 12px;
+}
