@@ -1,5 +1,6 @@
 <html>
   <head>
+    <link rel="stylesheet" href="./app.css" />
   </head>
   <body>
     <div id="app" class="wholePage">
@@ -30,5 +31,329 @@
       </div>  
     </div>
   </body>
+  <script>
+    
+    /* window.addEventListener("click", (e) => {
+  console.log(e.target.id)
+  if(e.target.id === "workImg"){
+  }
+})
+ */
+ 
+const workTab = document.getElementById("workTab")
+workTab.innerHTML = "<br/>Work"
+
+const playTab = document.getElementById("playTab")
+playTab.innerHTML = "<br/>Play"
+
+const otherTab = document.getElementById("otherTab")
+otherTab.innerHTML = "<br/> Everything Else"
+
+const viewContent = document.getElementById("viewContent")
+const lowerHalf = document.getElementById("lowerHalf")
+const homeButtonArea = document.getElementById("homeButtonArea")
+
+
+/* REAL HOME BUTTON  */
+
+const homeButton = document.createElement("BUTTON")
+homeButton.id = "homeButton"
+homeButton.innerHTML = "HOME PAGE"
+homeButton.classList.add("homeButton")
+lowerHalf.appendChild(homeButton)
+
+/* CLICK ON HOME BUTTON*/
+homeButton.addEventListener("click", () =>{
+  console.log("home button clicked")
+	viewContent.innerHTML = ""
+  lowerHalf.innerHTML = ""
+  homeButtonArea.innerHTML = ""
+  viewContent.innerHTML = "Hey, this is my website I made in a week. <br/>Ain't much but it's honest work. <br/><br/> Click on the tabs above if you want I guess."
+  
+  
+  
+  /* FAKE HOME BUTTON */
+const fakeHomeButton = document.createElement("BUTTON")
+fakeHomeButton.id = "fakeHomeButton"
+fakeHomeButton.innerHTML = "HOME PAGE"
+fakeHomeButton.classList.add("homeButton")
+lowerHalf.appendChild(fakeHomeButton)
+
+fakeHomeButton.addEventListener("mouseover", () =>{
+	workTab.innerHTML = ""
+	playTab.innerHTML = ""
+  otherTab.innerHTML = ""
+	fakeHomeButton.innerHTML = "THIS IS THE HOME PAGE DUMMY"
+  
+  const fakeHomeImg = document.createElement("img")
+  fakeHomeImg.src = "https://thumbs.gfycat.com/SilentCheeryEidolonhelvum-max-1mb.gif"
+  fakeHomeImg.id = "fakeHomeImg"
+  fakeHomeImg.classList.add("hoverImg")
+  
+  const fakeHomeImgB = document.createElement("img")
+  fakeHomeImgB.src = "https://thumbs.gfycat.com/SilentCheeryEidolonhelvum-max-1mb.gif"
+  fakeHomeImgB.id = "fakeHomeImgB"
+  fakeHomeImgB.classList.add("hoverImg")
+  
+  const fakeHomeImgC = document.createElement("img")
+  fakeHomeImgC.src = "https://thumbs.gfycat.com/SilentCheeryEidolonhelvum-max-1mb.gif"
+  fakeHomeImgC.id = "fakeHomeImgC"
+  fakeHomeImgC.classList.add("hoverImg")
+  
+  workTab.appendChild(fakeHomeImg)
+  playTab.appendChild(fakeHomeImgB)   
+  otherTab.appendChild(fakeHomeImgC)
+  
+    })  
+    
+  	fakeHomeButton.addEventListener("mouseout", () =>{	
+    fakeHomeButton.innerHTML = "HOME PAGE"	
+    workTab.innerHTML = "<br/>Work"
+    playTab.innerHTML = "<br/>Play"
+    otherTab.innerHTML = "<br/>Everything Else"
+    })
+  
+  })
+/*  AUTO CLICK BUTTON TO BRING UP HOME PAGE*/
+window.onload = function(){
+  document.getElementById("homeButton").click()}
+      
+  
+  
+  
+/* HOVER FUNCTION */
+
+workTab.addEventListener("mouseover", () => {
+  playTab.innerHTML = ""
+  otherTab.innerHTML = ""
+
+  /* const workImg = document.createElement("img")
+  workImg.src = "https://i.pinimg.com/originals/94/76/24/947624e9216145ae503d6aeede82531c.jpg"
+  workImg.id = "workImg"
+  workImg.classList.add("hoverImg")
+  workTab.appendChild(workImg) */
+
+  const playImg = document.createElement("img")
+  playImg.src = "https://media0.giphy.com/media/e6tJpLvjY8jXa/giphy.gif?cid=ecf05e4772kxulmg25635wagtbi4zjiz27qqwmsr25ro1pn4&rid=giphy.gif&ct=g"
+  playImg.id = "playImg"
+  playImg.classList.add("hoverImg")
+  playTab.appendChild(playImg)
+
+  const otherImg = document.createElement("img")
+  otherImg.src = "https://media1.giphy.com/media/GTJFIAnmAdrnsmXcO7/giphy.gif?cid=ecf05e47osynnt2pb1oft9efxum9wloptzilwxwrbo1rivr6&rid=giphy.gif&ct=g"
+  otherImg.id = "otherImg"
+  otherImg.classList.add("hoverImg")
+  otherTab.appendChild(otherImg)
+
+  workTab.addEventListener("mouseout", () => {
+    workTab.innerHTML = "<br/>Work"
+    playTab.innerHTML = "<br/>Play"
+    otherTab.innerHTML = "<br/>Everything Else"
+  })
+})
+
+playTab.addEventListener("mouseover", () => {
+  workTab.innerHTML = ""
+  otherTab.innerHTML = ""
+
+  const workImg = document.createElement("img")
+  workImg.src = "https://i.pinimg.com/originals/94/76/24/947624e9216145ae503d6aeede82531c.jpg"
+  workImg.id = "workImg"
+  workImg.classList.add("hoverImg")
+  workTab.appendChild(workImg)
+
+  /* const playImg = document.createElement("img")
+  playImg.src = "https://media0.giphy.com/media/e6tJpLvjY8jXa/giphy.gif?cid=ecf05e4772kxulmg25635wagtbi4zjiz27qqwmsr25ro1pn4&rid=giphy.gif&ct=g"
+  playImg.id = "playImg"
+  playImg.classList.add("hoverImg")
+  playTab.appendChild(playImg) */
+
+  const otherImg = document.createElement("img")
+  otherImg.src = "https://media1.giphy.com/media/GTJFIAnmAdrnsmXcO7/giphy.gif?cid=ecf05e47osynnt2pb1oft9efxum9wloptzilwxwrbo1rivr6&rid=giphy.gif&ct=g"
+  otherImg.id = "otherImg"
+  otherImg.classList.add("hoverImg")
+  otherTab.appendChild(otherImg)
+
+  playTab.addEventListener("mouseout", () => {
+    workTab.innerHTML = "<br/>Work"
+    playTab.innerHTML = "<br/>Play"
+    otherTab.innerHTML = "<br/>Everything Else"
+  })
+})
+
+otherTab.addEventListener("mouseover", () => {
+  workTab.innerHTML = ""
+  playTab.innerHTML = ""
+
+  const workImg = document.createElement("img")
+  workImg.src = "https://i.pinimg.com/originals/94/76/24/947624e9216145ae503d6aeede82531c.jpg"
+  workImg.id = "workImg"
+  workImg.classList.add("hoverImg")
+  workTab.appendChild(workImg)
+
+  const playImg = document.createElement("img")
+  playImg.src = "https://media0.giphy.com/media/e6tJpLvjY8jXa/giphy.gif?cid=ecf05e4772kxulmg25635wagtbi4zjiz27qqwmsr25ro1pn4&rid=giphy.gif&ct=g"
+  playImg.id = "playImg"
+  playImg.classList.add("hoverImg")
+  playTab.appendChild(playImg)
+
+  /* const otherImg = document.createElement("img")
+  otherImg.src = "https://media1.giphy.com/media/GTJFIAnmAdrnsmXcO7/giphy.gif?cid=ecf05e47osynnt2pb1oft9efxum9wloptzilwxwrbo1rivr6&rid=giphy.gif&ct=g"
+  otherImg.id = "otherImg"
+  otherImg.classList.add("hoverImg")
+  otherTab.appendChild(otherImg) */
+
+  otherTab.addEventListener("mouseout", () => {
+    workTab.innerHTML = "<br/>Work"
+    playTab.innerHTML = "<br/>Play"
+    otherTab.innerHTML = "<br/>Everything Else"
+  })
+})
+
+
+
+
+
+
+/* CLICK WORK TAB */
+const workTab = document.getElementById("workTab")
+workTab.addEventListener("click", () => {
+  console.log("Work Tab clicked")
+  const workContent = document.getElementById("viewContent")
+  workContent.innerHTML = ""
+  
+	const lowerHalfWork = document.getElementById("lowerHalf")
+  lowerHalfWork.innerHTML = ""
+  
+  const pagePics = document.createElement("div")
+  pagePics.classList.add("pagePicClass")
+
+  const workPicJim = document.createElement("img")
+  workPicJim.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUxvK2mg7jxq5QWh7E5Dga-M7GcBFVEuYvqa-28NIJBwN0qQcu1hZ7-2PGxApJh4VWw-M&usqp=CAU"
+  workPicJim.classList.add("pagePicIndv")
+  
+  pagePics.appendChild(workPicJim)
+  
+  /*  workPicJim.addEventListener("mouseover", () => {
+     console.log("jimmy")
+     
+     const caption = document.createElement("div")
+   workContent.appendChild(caption)
+    caption.innerHTML = "Here I am at Jimmy John's!"
+     
+    
+    workPicJim.addEventListener("mouseout", () => {
+    caption.innerHTML = ""
+     })  */
+  
+  const workPicRgr = document.createElement("img")
+  workPicRgr.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaB2VB5bpx1Ph6VkMkCtbILkmggHHppMpvFA&usqp=CAU "
+  workPicRgr.classList.add("pagePicIndv")
+  pagePics.appendChild(workPicRgr)
+  
+  
+  workContent.innerHTML = " I used to work at Jimmy John's, now I'm in the Army. <br/><br/><strong> Neat <strong> . <br/>"
+  lowerHalfWork.appendChild(pagePics)
+  
+  /* HOME PAGE BUTTON */
+ 	lowerHalfWork.appendChild(homeButton)
+    
+  
+  }) 
+})
+
+
+/* CLICK PLAY TAB */
+const playTab = document.getElementById("playTab")
+playTab.addEventListener("click", () => {
+  console.log("tab got clicked")
+  const playContent = document.getElementById("viewContent")
+  playContent.innerHTML = ""
+  playContent.innerHTML = "Here is a paragraph about fun stuff"
+
+	const lowerHalfPlay = document.getElementById("lowerHalf")
+  lowerHalfPlay.innerHTML = ""
+
+  const pagePics = document.createElement("div")
+  pagePics.classList.add("pagePicClass")
+
+  const playPicDance = document.createElement("img")
+  playPicDance.src = "facebook_1673459544295_7018998060475407886.jpg"
+  playPicDance.classList.add("pagePicIndv")
+  pagePics.appendChild(playPicDance)
+ 
+
+  const playPicCamp =document.createElement("img")
+  playPicCamp.src =	"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYxYjhQcU5I1sBdk_YW5cUD_OHdt7qyBpBzg&usqp=CAU "
+  playPicCamp.classList.add("pagePicIndv")
+  pagePics.appendChild(playPicCamp)
+
+  /*
+  const play3 = document.createElement("img")
+  
+  workPic3.src = " " */
+
+
+  playContent	.innerHTML = " Catch me most weekends at Big Whisky Saloon cutting rugs. When the weather is nice, I'll be at La Push	getting drunk on the beach with the boiz.    <br/>"
+  lowerHalfPlay.appendChild(pagePics)
+  lowerHalfPlay.appendChild(homeButton)
+
+  /* const currRanger = document.createElement("div")
+  currRanger.innerHTML = "Current Ranger Data"
+  viewRangerContent.appendChild(currRanger)
+  
+  const brnResult = document.createElement("span")
+  brnResult.innerHTML = newRangerBuilder.brn
+  curBrnData.appendChild(brnResult)
+   */
+
+})
+
+/*	CLICK ON OTHER TAB	*/
+const otherTab = document.getElementById("otherTab")
+otherTab.addEventListener("click", () => {
+  console.log(" other tab got clicked")
+  const otherContent = document.getElementById("viewContent")
+  otherContent.innerHTML = ""
+  otherContent.innerHTML = "Here is a paragraph about other stuffff"
+
+	const lowerHalfother = document.getElementById("lowerHalf")
+  lowerHalfother.innerHTML = ""
+
+  const pagePics = document.createElement("div")
+  pagePics.classList.add("pagePicClass")
+
+  const otherPicTex = document.createElement("img")
+  otherPicTex.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhTklJowp7xh6KC69NnfbfQ7ijFFNNt1oJfw&usqp=CAU"
+  otherPicTex.classList.add("pagePicIndv")
+  pagePics.appendChild(otherPicTex)
+
+  const otherPicCamp = document.createElement("img")
+  otherPicCamp.src =	"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYxYjhQcU5I1sBdk_YW5cUD_OHdt7qyBpBzg&usqp=CAU "
+  otherPicCamp.classList.add("pagePicIndv")
+  pagePics.appendChild(otherPicCamp)
+
+
+  otherContent	.innerHTML = " That's it.  That's the whole thing.  Nothing else. <br/>"
+  
+  
+  	const addGram = document.createElement("div")
+  	const gramPic = document.createElement("img")
+  	gramPic.src = " https://cdn-icons-png.flaticon.com/512/174/174855.png"
+  	gramPic.classList.add("pagePicIndv") 
+  	gramPic.classList.add("gramPic")
+  	lowerHalfother.appendChild(pagePics)
+    lowerHalfother.innerHTML += "<br/>" 
+  lowerHalfother.appendChild(addGram)
+  addGram.appendChild(gramPic)
+  const followGram = document.createElement("span")
+  followGram.innerHTML = "Follow ya boi on the Gram!"
+  addGram.appendChild(followGram)
+  
+  homeButtonArea.appendChild(homeButton) 
+})
+
+
+  </script>  
   
 </html>
