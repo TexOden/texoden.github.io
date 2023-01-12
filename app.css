@@ -19,6 +19,8 @@ body {
   border-color:black;
   border-radius: 50%;
   background: gray;
+  min-width: 100px;
+  min-height: 100px;
 }
 .hoverImg {
   width: 100px;
