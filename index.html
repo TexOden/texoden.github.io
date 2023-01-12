@@ -32,7 +32,7 @@
     </div>
   </body>
   <script>
-   
+   console.log(1)
  
 const workTab = document.getElementById("workTab")
 workTab.innerHTML = "<br/>Work"
@@ -56,6 +56,8 @@ homeButton.innerHTML = "HOME PAGE"
 homeButton.classList.add("homeButton")
 lowerHalf.appendChild(homeButton)
 
+	  console.log(2)
+	  
 /* CLICK ON HOME BUTTON */
 homeButton.addEventListener("click", () =>{
   console.log("home button clicked")
@@ -64,7 +66,7 @@ homeButton.addEventListener("click", () =>{
   homeButtonArea.innerHTML = ""
   viewContent.innerHTML = "Hey, this is my website I made in a week. <br/>Ain't much but it's honest work. <br/><br/> Click on the tabs above if you want I guess."
   
-  
+  console.log(3)
   /* FAKE HOME BUTTON */
 const fakeHomeButton = document.createElement("BUTTON")
 fakeHomeButton.id = "fakeHomeButton"
@@ -107,11 +109,12 @@ fakeHomeButton.addEventListener("mouseover", () =>{
     })
   
   })
+	  console.log(4)
 /*  AUTO CLICK BUTTON TO BRING UP HOME PAGE*/
 window.onload = function(){
   document.getElementById("homeButton").click()}
       
-  
+  console.log(5)
   
   
 /* HOVER FUNCTION */
