@@ -343,6 +343,16 @@ otherTab.addEventListener("click", () => {
   followGram.innerHTML = "Follow ya boi on the Gram!"
   addGram.appendChild(followGram)
   
+	gramPic.addEventListener("click", () =>{
+  	followGram.innerHTML = ""
+  	followGram.innerHTML = "SIKE!! MY SHIT'S PRIVATE! <br/>  Here's my IMBD tho. <br/>"
+ 		const link = document.createElement('a')
+		link.textContent = "Some B Movies"
+		link.href = "https://www.imdb.com/name/nm6798127/" 
+    		link.style.color = "black"
+    		followGram.appendChild(link)
+  }) 
+	
   homeButtonArea.appendChild(homeButton) 
 })
 
