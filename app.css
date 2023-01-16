@@ -34,14 +34,13 @@ body {
 }
 .pagePicClass {
   display: flex;
-  justify-content: space-between;
-  resize: both;
-  border-radius: 25%
+  justify-content: space-around;
+  border-radius: 25%;
+  max-height: 35%;
 }
 .pagePicIndv {
   border-radius: 25%;
   max-width: 35%;
-  max-height: 35%;
 }
 .pagePicIndv:hover {
   opacity: .5;
