@@ -1,6 +1,6 @@
 body {
   animation: morph 5s infinite;
-  background-image: radial-gradient(black, transparent);
+  background-image: radial-gradient(#800000, transparent);
   /* background: #800000; */ 
   padding: 20px;
   font-family: Comic Sans Ms;
