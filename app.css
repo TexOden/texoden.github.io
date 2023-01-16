@@ -1,10 +1,16 @@
 body {
-  background-image: radial-gradient (red, yellow, green);
-  background: #800000;
+  animation: morph 5s infinite;
+  background-image: radial-gradient(black, transparent);
+  /* background: #800000; */ 
   padding: 20px;
   font-family: Comic Sans Ms;
   text-align: center;
-  color: gold;
+}
+@keyframes morph {
+  0% {background-color: red;}
+  33% {background-color: green;}
+  66% {background-color: blue;}
+  100% {background-color: red;}
 }
 .wholePage{  
 }
